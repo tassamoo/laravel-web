@@ -24,3 +24,15 @@ node -v # should print `v21.7.1`
 # verifies the right NPM version is in the environment
 npm -v # should print `10.5.0`
 ```
+
+4. Install mysql & phpmyadmin
+```bash
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-22-04
+```
+
+5. Install php extension
+```bash
+sudo apt-get install php-mcrypt php-openssl php-mbstring php-tokenizer php-zip php-xml
+```
+
+
