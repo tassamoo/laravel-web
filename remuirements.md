@@ -1,7 +1,9 @@
 ### Installing laravel
 
 1. Install php 8.3
+```bash
 sudo apt install php8.3 php-xml php-curl
+```
 
 2. Install Composer
 ```bash
