@@ -10,7 +10,8 @@ sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
 sudo apt update
 
 # Install new PHP 8.3 packages
-sudo apt install php8.3 php8.3-cli php8.3-{bz2,curl,mbstring,intl}
+sudo apt install php8.3 php8.3-cli php8.3-{bz2,curl,mbstring,intl,xml}
+
 
 # Install FPM OR Apache module
 sudo apt install php8.3-fpm
