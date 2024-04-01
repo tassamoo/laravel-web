@@ -2,7 +2,28 @@
 
 1. Install php 8.3
 ```bash
-sudo apt install php8.3 php-xml php-curl
+## Save existing php package list to packages.txt file
+sudo dpkg -l | grep php | tee packages.txt
+
+# Add Ondrej's PPA
+sudo add-apt-repository ppa:ondrej/php # Press enter when prompted.
+sudo apt update
+
+# Install new PHP 8.3 packages
+sudo apt install php8.3 php8.3-cli php8.3-{bz2,curl,mbstring,intl}
+
+# Install FPM OR Apache module
+sudo apt install php8.3-fpm
+# OR
+# sudo apt install libapache2-mod-php8.2
+
+# On Apache: Enable PHP 8.3 FPM
+sudo a2enconf php8.3-fpm
+# When upgrading from an older PHP version:
+sudo a2disconf php8.2-fpm
+
+## Remove old packages
+sudo apt purge php8.2*
 ```
 
 2. Install Composer
